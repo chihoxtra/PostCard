@@ -34,20 +34,21 @@ class ViewController: UIViewController {
 
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
-        // this is for challenge #1
+        // this is for challenge #1 manipulating the name Label and text fields
         nameLabel.hidden = false
         nameLabel.text = enterNameTextField.text
         nameLabel.textColor = UIColor.blueColor()
         enterNameTextField.text = ""
-        enterMessageTextField.resignFirstResponder()
+        enterNameTextField.resignFirstResponder()
         
-        
+        // manipulating the message label and text fields
         messageLabel.hidden =  false
         messageLabel.text = enterMessageTextField.text
         messageLabel.textColor = UIColor(red:1.0, green:1.0,blue:0.0,alpha:1.0)
         enterMessageTextField.text = ""
-        sender.backgroundColor = UIColor.redColor()
         enterMessageTextField.resignFirstResponder()
+        
+        sender.backgroundColor = UIColor.redColor()
         
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
         
