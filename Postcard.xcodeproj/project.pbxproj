@@ -13,6 +13,8 @@
 		7EBC64081B54CB3C0046CCDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC64071B54CB3C0046CCDB /* Images.xcassets */; };
 		7EBC640B1B54CB3C0046CCDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC64091B54CB3C0046CCDB /* LaunchScreen.xib */; };
 		7EBC64171B54CB3C0046CCDB /* PostcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64161B54CB3C0046CCDB /* PostcardTests.swift */; };
+		7EBC64211B54E3820046CCDB /* SagradaFamilia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC64201B54E3820046CCDB /* SagradaFamilia.jpeg */; };
+		7EDE75381B56C9D700C266D3 /* AlbertEinsteinStamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EDE75371B56C9D700C266D3 /* AlbertEinsteinStamp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		7EBC64101B54CB3C0046CCDB /* PostcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EBC64151B54CB3C0046CCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EBC64161B54CB3C0046CCDB /* PostcardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardTests.swift; sourceTree = "<group>"; };
+		7EBC64201B54E3820046CCDB /* SagradaFamilia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SagradaFamilia.jpeg; sourceTree = "<group>"; };
+		7EDE75371B56C9D700C266D3 /* AlbertEinsteinStamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlbertEinsteinStamp.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		7EBC63FE1B54CB3C0046CCDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7EBC64201B54E3820046CCDB /* SagradaFamilia.jpeg */,
+				7EDE75371B56C9D700C266D3 /* AlbertEinsteinStamp.jpg */,
 				7EBC63FF1B54CB3C0046CCDB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					7EBC63FA1B54CB3C0046CCDB = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = LGA958JWTK;
 					};
 					7EBC640F1B54CB3C0046CCDB = {
 						CreatedOnToolsVersion = 6.4;
@@ -193,6 +200,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EBC64061B54CB3C0046CCDB /* Main.storyboard in Resources */,
+				7EBC64211B54E3820046CCDB /* SagradaFamilia.jpeg in Resources */,
+				7EDE75381B56C9D700C266D3 /* AlbertEinsteinStamp.jpg in Resources */,
 				7EBC640B1B54CB3C0046CCDB /* LaunchScreen.xib in Resources */,
 				7EBC64081B54CB3C0046CCDB /* Images.xcassets in Resources */,
 			);
@@ -342,9 +351,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +364,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +426,7 @@
 				7EBC641C1B54CB3C0046CCDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EBC641D1B54CB3C0046CCDB /* Build configuration list for PBXNativeTarget "PostcardTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +435,7 @@
 				7EBC641F1B54CB3C0046CCDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
